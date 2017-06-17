@@ -147,6 +147,9 @@ namespace CustomContentDialog.Sample.ContentDialog
             this.InitializeComponent();
 
             LayoutUpdated += OnLayoutUpdated;
+
+            Popup.Closed += PopupOnClosed;
+            Popup.Opened += PopupOnOpened;
         }
 
         private void OnLayoutUpdated(object sender, object o)
